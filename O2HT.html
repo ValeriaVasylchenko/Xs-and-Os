@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!--Lets to write a text in any language.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Fits the page and its contents to the screen size.-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> <!--A line for Internet Explorer.-->
+    <title>Ohjelmointi 2, harjoitustyö Ristinolla</title> <!--Program"s name.-->
+    <script src="O2HT.js"></script> <!--File with JavaScript code.-->
+</head>
+
+<body>
+    <form name="frmO2HT">
+        <h3>Welcome to Xs and Os!</h3>
+        
+        <p><br> You will be playing with computer.</p>
+
+        <!--A question for user to start or not to start the game with 2 buttons below.-->
+        <p><br> Would you like to start?</p>
+        <p><input style="width:154px;font-weight:bold" type="button" value="YES" id="btnStart" onclick="Start(document.frmO2HT)" size="30"></p>
+        <p><input style="width:154px;font-weight:bold" type="button" value="NO" id="btnClose" onclick="Close(document.frmO2HT)" size="30"></p>
+       
+        <!--Game field's #1 line.-->
+        <br>
+        <img src="StartDot.png" id="cell0_0" onclick="ChangeStartDot(this.id)"> 
+		<img src="StartDot.png" id="cell0_1" onclick="ChangeStartDot(this.id)"> 
+        <img src="StartDot.png" id="cell0_2" onclick="ChangeStartDot(this.id)">
+        <!--Game field's #2 line.-->
+        <br>
+        <img src="StartDot.png" id="cell1_0" onclick="ChangeStartDot(this.id)"> 
+		<img src="StartDot.png" id="cell1_1" onclick="ChangeStartDot(this.id)"> 
+        <img src="StartDot.png" id="cell1_2" onclick="ChangeStartDot(this.id)">
+        <!--Game field's #3 line.-->
+        <br>
+		<img src="StartDot.png" id="cell2_0" onclick="ChangeStartDot(this.id)"> 
+		<img src="StartDot.png" id="cell2_1" onclick="ChangeStartDot(this.id)"> 
+        <img src="StartDot.png" id="cell2_2" onclick="ChangeStartDot(this.id)">
+    </form>
+</body>
+</html>
